@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Drop shadow filter for depth -->
+    <filter id="dropShadow" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Black background with rounded corners -->
+  <rect x="0" y="0" width="64" height="64" rx="12" ry="12" fill="#000000"/>
+
+  <!-- Centered "JW" with italic skew and slight left shift to visually center -->
+  <text x="50%" y="50%"
+        fill="#ffffff"
+        stroke="#ffffff"
+        stroke-width="0.5"
+        font-family="Times New Roman, serif"
+        font-size="32"
+        font-style="italic"
+        font-weight="bold"
+        text-anchor="middle"
+        dominant-baseline="central"
+        filter="url(#dropShadow)"
+        transform="skewX(-10) translate(-3, 0)">
+    JW
+  </text>
+</svg>

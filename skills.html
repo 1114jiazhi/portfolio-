@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiazhi Wang - Skills</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        /* Modern Black & White Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #fff;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header and Navigation */
+        header {
+            background: #fff;
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #000;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        /* Main Content */
+        main {
+            padding-top: 6rem; /* Space for fixed header */
+            min-height: calc(100vh - 10rem); /* Ensures footer stays at bottom */
+        }
+        
+        .section {
+            padding: 2rem 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #000;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Skills Categories */
+        .skills-category {
+            margin-bottom: 3rem;
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .skills-category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #222;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        
+        .skills-category h3:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ddd;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .skill-tag {
+            background: #fff;
+            color: #333;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: #f0f0f0;
+        }
+        
+        /* Skills Description */
+        .skills-description {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        /* Footer */
+        footer {
+            background: #fafafa;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .skills-category h3 {
+                font-size: 1.3rem;
+            }
+            
+            .skills-category {padding: 1.5rem;
+            }
+            
+            .skill-tag {
+                font-size: 0.9rem;
+                padding: 0.6rem 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+            }
+            
+            nav li {
+                margin: 0.5rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="personal.html">Personal Life</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2 class="section-title">Skills & Expertise</h2>
+                
+                <div class="skills-description">
+                    <p>With a strong foundation in data science and analytics, I've developed a diverse skill set that allows me to tackle complex problems and deliver data-driven solutions. Below are the key skills I've cultivated throughout my career and education.</p>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">VBA</span>
+                        <span class="skill-tag">Julia</span>
+                        <span class="skill-tag">Scala</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Statistics & Machine Learning & Marketing</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">Natural Language Processing</span>
+                        <span class="skill-tag">Time Series Analysis</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Regression Analysis</span>
+                        <span class="skill-tag">Clustering</span>
+                        <span class="skill-tag">Causal Inference</span>
+                        <span class="skill-tag">Classification</span>
+                        <span class="skill-tag">Forecasting</span>
+                        <span class="skill-tag">Hypothesis Testing</span>
+                        <span class="skill-tag">Naive Bayes</span>
+                        <span class="skill-tag">Causal Inference</span>
+                        <span class="skill-tag">Boosting Algorithms</span>
+                        <span class="skill-tag">Advanced Tree Models</span>
+                        <span class="skill-tag">GLM</span>
+                        <span class="skill-tag">SVM</span>
+                        <span class="skill-tag">Cluster</span>
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">CRM</span>
+                        <span class="skill-tag">Conversion Lift Testing</span>
+                        <span class="skill-tag">Marketing Mix Modeling</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Spark</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">Airflow</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Database Management</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">AWS (EC2, SageMaker, Glue, S3)</span>
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">Apache Airflow</span>
+                        <span class="skill-tag">MS SQL Server</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">Snowflake</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Presentation</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                        <span class="skill-tag">Cross-Functional Collaboration</span>
+                        <span class="skill-tag">Agile Methodologies</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Jiazhi Wang. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

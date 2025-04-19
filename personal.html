@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jiazhi Wang - Personal Life</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #fff;
+      padding: 1.5rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 1.5rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    nav a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #000;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      padding-top: 6rem;
+      min-height: calc(100vh - 10rem);
+    }
+
+    .section {
+      padding: 2rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: #000;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 2rem auto 4rem auto;
+      color: #555;
+    }
+
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .city-card {
+      display: block;
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .city-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #fafafa;
+      padding: 2rem 0;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      nav li {
+        margin: 0.5rem 0.8rem;
+      }
+
+      .city-card {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="personal.html">Personal Life</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section">
+        <h2 class="section-title">Personal Life</h2>
+
+        <p class="intro-text">
+          I've had the opportunity to live in several incredible cities, and each city shapes my life and personality in unique ways. 
+          Click on a city below to explore my memories and experiences to know more about me!
+        </p>
+
+        <div class="cities-grid">
+          
+          <a href="sanfrancisco.html" class="city-card" style="background-image: url('city image/sanfrancisco.jpg');"></a>
+          <a href="chengdu.html" class="city-card" style="background-image: url('city image/chengdu.jpg');"></a>
+          <a href="columbus.html" class="city-card" style="background-image: url('city image/columbus.jpg');"></a>
+          <a href="beijing.html" class="city-card" style="background-image: url('city image/beijing.jpg');"></a>
+          <a href="yangquan.html" class="city-card" style="background-image: url('city image/yangquan.jpg');"></a>
+          <a href="losangeles.html" class="city-card" style="background-image: url('city image/losangeles.jpg');"></a>
+
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jiazhi Wang. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

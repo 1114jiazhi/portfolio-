@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beijing - My Journey</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      padding: 1.2rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 1.5rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    nav a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #000;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      padding-top: 5rem;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: #000;
+      bottom: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+      margin: 1.5rem auto 3rem;
+      max-width: 750px;
+    }
+
+    .passage-section {
+      margin-bottom: 4rem;
+    }
+
+    .passage-text {
+      font-size: 1.15rem;
+      color: #444;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+
+    .photo-placeholder {
+      width: 100%;
+      height: 250px;
+      background-color: #eee;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #fafafa;
+      padding: 2rem 0;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      nav li {
+        margin: 0.5rem 0.8rem;
+      }
+
+      .photo-placeholder {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="personal.html">Personal Life</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="section-title">Beijing - My Journey of Growth</h1>
+      <p class="intro-text">
+        Sixteen years of discovery, friendships, and transformation in the capital city of China.
+      </p>
+
+      <div class="passage-section">
+        <img src="beijing/1.jpg" alt="Description" style="width:100%; border-radius:8px; margin-bottom:2rem;">
+
+        <p class="passage-text">
+          After spending my early years in Yangquan, I moved to Beijing, where I would spend the next 16 years of my life — attending primary school, middle school, and high school. 
+          This move from a small rural town to one of the largest cities in the world shaped me profoundly.
+        </p>
+
+        <p class="passage-text">
+          With the increasing difficulty of course, Studying in Beijing sharpened my attention to detail and developed my ability for critical thinking and problem solving. 
+          The city's vibrant energy, diverse communities, and competitive educational environment pushed me to continuously learn, 
+          embrace creativity, and hone an ethical mindset. I also discovered the art of effective storytelling — understanding that communication is just as important as ideas themselves.
+        </p>
+      </div>
+
+      <div class="passage-section">
+        <img src="beijing/2.jpg" alt="Description" style="width:100%; border-radius:8px; margin-bottom:2rem;">
+
+        <p class="passage-text">
+          During my time in Beijing, I made lifelong friendships with people from all walks of life, many of whom had traveled from different parts of the country. 
+          These friendships taught me the value of diversity, empathy, and collaboration.
+        </p>
+
+        <p class="passage-text">
+          Most importantly, moving away from home at a young age taught me independence — to think for myself, to adapt quickly, and to find strength in unfamiliar environments. 
+          My years in Beijing laid the foundation for the person I continue to become today.
+        </p>
+      </div>
+
+      <div class="passage-section">
+        <img src="beijing/3.jpeg" alt="Description" style="width:100%; border-radius:8px; margin-bottom:2rem;">
+      </div>
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jiazhi Wang. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
