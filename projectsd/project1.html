@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capgemini Internship - Innovation in Sentiment Analysis</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      background-color: #fff;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      padding: 1.2rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0 1.5rem;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    nav a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #000;
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+    main {
+      padding-top: 5rem;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .project-title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-text {
+      font-size: 1.15rem;
+      color: #444;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+
+    .highlight-box {
+      background-color: #fafafa;
+      padding: 1.5rem;
+      border-left: 5px solid #007BFF;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+    }
+
+    .photo-placeholder {
+      width: 70%;
+      max-width: 600px;
+      margin: 2rem auto;
+      height: 250px;
+      background-color: #eee;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #fafafa;
+      padding: 2rem 0;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .project-title {
+        font-size: 1.8rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+
+      nav li {
+        margin: 0.5rem 0.8rem;
+      }
+
+      .photo-placeholder {
+        height: 200px;
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="personal.html">Personal Life</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="project-title">Capgemini Internship - Innovation in Sentiment Analysis</h1>
+
+      <p class="project-text">
+        During my internship at Capgemini (China), I confronted a critical business analytics challenge: analyzing user satisfaction and product quality feedback for a major automotive client.
+        This project tested my ability to innovate, adapt, and push beyond traditional analytical techniques.
+      </p>
+
+      <div class="section-subtitle">Traditional Approach and Its Limitations</div>
+      <p class="project-text">
+        Initially, we employed a blend of manual reviews and basic algorithmic models to analyze positive feedback and identify key drivers of satisfaction. 
+        While this provided actionable insights into popular vehicle features and boosted user retention strategies, the analysis of negative feedback revealed serious gaps:
+      </p>
+
+      <div class="highlight-box">
+        <ul>
+          <li>Low-frequency critical issues were overlooked.</li>
+          <li>Manual extraction introduced subjectivity.</li>
+          <li>Sentiment models oversimplified user emotions (binary classification).</li>
+        </ul>
+      </div>
+
+      <p class="project-text">
+        It became clear that traditional keyword-based sentiment analysis was insufficient to capture the true depth and complexity of user experiences.
+      </p>
+
+      <img src="project1/1.jpg" alt="Description" style="width:70%; max-width:600px; display:block; margin:2rem auto; border-radius:8px;">
+
+      <div class="section-subtitle">Innovation: Leveraging ChatGLM for Advanced Analysis</div>
+      <p class="project-text">
+        To address these challenges, I proposed an innovative strategy endorsed by my manager: using ChatGLM, a Chinese-focused large language model, 
+        for automated labeling, emotion analysis, and deeper interpretation of feedback.
+      </p>
+
+      <p class="project-text">
+        I introduced prompt engineering techniques — crafting detailed instructions and example-driven prompts — to maximize ChatGLM’s few-shot learning capabilities. 
+        This approach allowed us to:
+      </p>
+
+      <div class="highlight-box">
+        <ul>
+          <li>Capture a broader emotional spectrum beyond simple positive/negative sentiment.</li>
+          <li>Automatically label feedback and map complex issues to product features.</li>
+          <li>Reduce manual bias and increase analysis scalability.</li>
+        </ul>
+      </div>
+
+      <img src="project1/2.jpg" alt="Description" style="width:70%; max-width:600px; display:block; margin:2rem auto; border-radius:8px;">
+
+      <div class="section-subtitle">Reflections and Impact</div>
+      <p class="project-text">
+        This experience revealed the transformative potential of large language models in business analytics — shifting how coding and business strategy interact.
+        Instead of rigid pipelines, we began simulating customer journeys directly with natural language prompts, dramatically accelerating innovation cycles.
+      </p>
+
+      <p class="project-text">
+        The project strengthened my commitment to pursue data science seriously. 
+        My economics background gave me a strong business intuition, but this project made it clear: 
+        mastering analytics tools, machine learning models, and advanced data storytelling techniques was crucial for my future.
+      </p>
+
+      <div class="section-subtitle">Skills Gained:</div>
+      <div class="highlight-box">
+        <ul>
+          <li>Sentiment analysis and emotional modeling.</li>
+          <li>Prompt engineering for LLMs (ChatGLM, ChatGPT).</li>
+          <li>Natural Language Processing (NLP) innovation.</li>
+          <li>Business-driven data storytelling.</li>
+          <li>Cross-functional collaboration and stakeholder communication.</li>
+        </ul>
+      </div>
+
+      <p class="project-text">
+        Today, as I deepen my technical expertise through my MSBA studies, I draw upon this transformative project as a foundation — a reminder of the immense possibilities 
+        when business understanding and data science innovation come together.
+      </p>
+
+      
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Jiazhi Wang. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
